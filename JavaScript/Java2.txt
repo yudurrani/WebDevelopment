@@ -1,0 +1,14 @@
+<html>
+	<head>
+	
+	<title>Javascript</title>
+	
+	</head>
+	
+	<body>
+	
+	<button onclick="alreat('Hi Yasir')">Click Me</button>
+	
+	</body>
+
+</html>
