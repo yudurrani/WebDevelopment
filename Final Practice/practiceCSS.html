@@ -3,21 +3,74 @@
 		<title>CSS practice</title>
 	
 		<style type="text/css">
-			p{
-				color:red;
-				font-size:200%;
-				
+			
+
+			h1{
+
+				color:crimson;
+				font-size: 200%;
 			}
+
+			.first{
+				color:blueviolet;
+				text-decoration:underline;
+			}
+
+			.main{
+				font-size:300%;
+				color:cyan;
+
+			}
+
+			#first-section{
+				color: #000000;
+				background-color: aquamarine;
+				width:200px;
+				float: left;
+			}
+
+			#second-section{
+				background-color: black;
+				color:aqua;
+				width: 200px;
+				float: right;
+			}
+
+			.clear-float{
+				clear:both;
+			}
+
 			</style>
 		
 	</head>
 	
 	
 	<body>
-		<h1 style="color:blue;font-size:200%"> There is a brown fox! </h1>
+			<h1 class="main"> There is a <span class="first">underline</span> brown fox! </h1>
 		
-		<p> hi, this is me </p>
-	
+			<p class="first"> hi, this is me </p>
+
+		<div id="first-section">
+
+			<p>some more text</p>
+
+			<p>Aizah is playing</p>
+
+			<p>She came downstairs</p>
+
+		</div>
+
+		<div id="second-section">
+
+			<p>the girls need ice cream</p>
+			<p>they have called mcdonalds but no luck</p>
+			<p>there machine is not working or they dont have their desired flavour</p>
+
+		</div>
+
+		<div class="clear-float"></div>
+
+		<p>This para is not floated</p>
 		
 	</body>
 </html>
