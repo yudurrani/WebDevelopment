@@ -23,21 +23,55 @@
 			}
 
 			#first-section{
-				color: #000000;
 				background-color: aquamarine;
 				width:200px;
-				float: left;
+				height:300px;
+				position:relative;
+				
+				
+	
 			}
 
 			#second-section{
 				background-color: black;
 				color:aqua;
 				width: 200px;
-				float: right;
+				margin:100px;
+				padding:15px;
+				border-block-end-color: blue;
+			
 			}
 
 			.clear-float{
 				clear:both;
+			}
+
+			#first-box{
+				background-color: red;
+				border : 5px black solid;
+			
+			}
+
+			
+			#second-box{
+				background-color: yellow;
+				border-style: dashed dotted solid solid;
+				border-color:red blue orange blue;
+				
+			}
+			
+			#third-box{
+				background-color: green;
+				border : 5px black solid;
+			
+			}
+
+			.square{
+				width:150px;
+				height:150px;
+				margin:25px;
+				float: left;
+				border-radius:50%;	
 			}
 
 			</style>
@@ -71,6 +105,11 @@
 		<div class="clear-float"></div>
 
 		<p>This para is not floated</p>
+
+
+		<div id="first-box" class="square"></div>
+		<div id="second-box" class="square"></div>
+		<div id="third-box" class="square"></div>
 		
 	</body>
 </html>
