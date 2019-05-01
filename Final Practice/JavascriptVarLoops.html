@@ -1,0 +1,52 @@
+<html>
+    <head>
+        <title>Var And Loops</title>
+    </head>
+
+    <body>
+
+        <input id="input" type="text">
+        <button id="button">Change the text</button>
+
+        <p id="text">This is some Text</p>
+
+        <script type="text/JavaScript">
+
+          
+           document.getElementById("button").onclick = function(){
+                var usingVar="" ;
+                usingVar =document.getElementById("input").value;
+        
+               document.getElementById("text").innerHTML=usingVar;
+           }
+
+
+
+           var myArray=new Array();
+
+           myArray[0] = "pizza";
+           myArray[1] = "apple";
+           myArray[2] = "coke" ;
+           myArray[3] = "ketchep" ;
+
+           // console.log(myArray.length);
+
+           var tweets=["Good Morning" , "lets make coffee"];
+           tweets.push("and start work");
+           // alert(tweets[1]);
+
+           // console.log(tweets);
+
+           // tweets.splice(1,2);
+
+           tweets.splice(1,1,"or lets make breakfast")
+
+           console.log(tweets);
+
+
+          
+
+        </script>
+
+    </body>
+</html>
