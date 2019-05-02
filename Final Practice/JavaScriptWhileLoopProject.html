@@ -1,0 +1,52 @@
+<html>
+    <head>
+        <title>WhileLoop</title>
+    </head>
+
+    <body>
+
+        <p>Enter the number,let the computer guess it!</p>
+
+        <p><input type="text" id ="input"></p>
+
+        <button id="button">Click here to see</button>
+
+
+
+        <script type="text/JavaScript">
+
+        document.getElementById("button").onclick = function(){
+            
+        var enteredNumber = document.getElementById("input").value; 
+        
+        var gotIt = false ;
+
+        var totalGuess = 1 ;
+
+        while ( gotIt == false){
+
+            var comGuess = Math.floor(Math.random() * 5);
+
+            totalGuess ++ ;
+
+            if ( comGuess == enteredNumber){
+
+                gotIt = true ;
+                alert (" The entered number is " + enteredNumber + ", Computer guessed in " + totalGuess + " tries");
+
+            }
+        }
+
+
+        }
+        
+        
+        
+        
+        
+        
+        </script>
+
+
+    </body>
+</html>

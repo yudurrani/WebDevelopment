@@ -9,30 +9,37 @@
             <input id="input" type="text">
             <button id="logIn">Log In</button>
 
+            <p id="colourList"></p>
+
         <script type = "text/JavaScript">
 
-        
-
-         
-
-            
 
             document.getElementById("logIn").onclick=function(){
             
             var check = document.getElementById("input").value;
 
-            var password="1durrani2";
+            var password=Math.floor(Math.random()*10 + 1);
             
 
            if (check == password) {
-               alert("You are logged in");
+               alert("You are logged in ");
+               
                
            }
            else{
-               alert("try again");
+               alert("try again, the random number was  " + password );
            }
            
-            }
+        }
+
+
+        var total ="";
+          var colors=["Red", "Yellow", "Blue"]
+          for ( i=0; i<colors.length; i++){
+              total = total+" "+colors[i];
+          }
+              
+            document.getElementById("colourList").innerHTML = total;
         
         
         
