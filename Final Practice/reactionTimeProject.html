@@ -1,0 +1,60 @@
+<html>
+    <head>
+        <title>Final Javascript Project</title>
+
+        <style type = "text/css">
+        
+        #square{
+            background-color: rgb(233, 0, 78);
+            height :100px;
+            width : 100px;
+            display: none;
+        }
+        
+        
+        </style>
+
+
+    </head>
+
+    <body>
+        <p>Your time:<span id="timeTaken"></span></p>
+        <div id ="square"></div>
+
+        <script type = "text/Javascript">
+
+        
+        var start = new Date().getTime();    
+        
+        function makeShapeApper(){
+
+            document.getElementById("square").style.display="block";
+
+            start = new Date().getTime();
+
+        }
+
+        function makeShapeReappear(){
+
+        setTimeout(makeShapeApper, Math.random() * 2000);
+        }
+
+        makeShapeReappear();
+
+        document.getElementById("square").onclick = function(){
+
+            document.getElementById("square").style.display="none";
+            
+            var nowTime = new Date().getTime();
+            var timeDifference = (nowTime - start)/1000;
+
+            document.getElementById("timeTaken").innerHTML= timeDifference + "s";
+            
+            makeShapeReappear();
+           
+        }  
+        
+        </script>
+
+    </body>
+</html>
