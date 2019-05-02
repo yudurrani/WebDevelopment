@@ -1,0 +1,65 @@
+<html>
+    <head>
+        <title>jQuerry</title>
+
+        <script type="text/javascript" src="jq.min.js"></script>
+
+        <style type="text/css">
+        
+        #circle{
+            height :150px;
+            width : 150px;
+            background-color: red;
+            border-radius: 50%;
+        }
+
+        .square{
+            height :150px;
+            width : 150px;
+            background-color: yellowgreen;
+            margin: 10px;
+
+        }
+        
+        
+        </style>
+    </head>
+
+    <body>
+        <p class="text">Hi there!</p>
+        <iframe src="https://www4.solarmovie.one/movie/"></iframe>
+
+        <div id="circle"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+
+
+        <script type="text/javascript">
+
+        $("div").click(function(){
+
+            $(this).fadeOut();
+
+        });
+
+
+        // $("#circle").hover(function(){
+        //    $(".text").html("The text has changed");
+        //    $("iframe").attr("src", "https://www.gmail.com");
+        //    $("#circle").css("background-color","black");
+           
+        // });
+        
+        // if ( typeof jQuery == "undefined"){
+        //     alert("jq is not installed");
+        // } else {
+        //     alert("its installed correctly");
+        // }
+        
+        
+        </script>
+
+
+
+    </body>
+</html>
