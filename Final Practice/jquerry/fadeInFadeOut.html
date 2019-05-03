@@ -27,7 +27,43 @@
             $("#text").fadeIn();
 
         } else {  
-            $("#text").fadeOut(); 
+            $("#text").fadeOut(); <html>
+    <head>
+        <title>Jq Animation</title>
+
+        <script text="text/javascript" src="jq.min.js"></script>
+
+        <script type="text/javascript" src="http://code.jquery.com/color/jquery.color-2.1.2.js"></script>
+
+        <style text="text/css">
+        
+        #circle{
+            height: 150px;
+            width: 150px;
+            border-radius: 50%;
+            background-color: blue;
+        }
+        
+        </style>
+
+    </head>
+
+    <body>
+
+        <div id="circle"></div>
+
+        <script text="text/javascript">
+        
+        $("#circle").click(function(){
+            $(this).animate( {height : "300px", width:"300px" , borderRadius: "0%" , backgroundColor: "red"} , 2000);
+
+        });
+        
+        
+        </script>
+
+    </body>
+</html>
 
         }
         });
