@@ -28,7 +28,7 @@
     <body>
         <p class="text">Hi there!</p>
         <iframe src="https://www4.solarmovie.one/movie/"></iframe>
-
+        <h1>this is a heading</h1>
         <div id="circle"></div>
         <div class="square"></div>
         <div class="square"></div>
@@ -38,7 +38,9 @@
 
         $("div").click(function(){
 
-            $(this).fadeOut();
+            $(this).fadeOut("slow",function(){
+                alert("fadeout has finished")
+            });
 
         });
 

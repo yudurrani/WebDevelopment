@@ -1,0 +1,39 @@
+<html>
+    <head>
+        <title>Fade</title>
+    </head>
+
+        <script type="text/javascript" src="jq.min.js"></script>
+
+        <style type="text/css">
+        
+        #text{
+            display: none;
+        }
+        
+        </style>
+
+    <body>
+
+        <p id="text">This is to be fade out, but will come back again</p>
+
+        <button id="button">Click Me!</button>
+
+
+        <script type="text/javascript">
+
+        $("#button").click(function(){
+            if ($("#text").css("display") == "none"){
+            $("#text").fadeIn();
+
+        } else {  
+            $("#text").fadeOut(); 
+
+        }
+        });
+  
+        
+        </script>
+
+    </body>
+</html>
